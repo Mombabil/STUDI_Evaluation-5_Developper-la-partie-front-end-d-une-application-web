@@ -1,0 +1,26 @@
+.home-container{
+    background: $color-1;
+    max-height: 100vh;
+    .bg-container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        .bg-top .logo-container .bg-bot{
+            height: 33vh;
+            min-width: 100%;
+        }
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            img{
+                height: 100%;
+            }
+        }
+        &:figure{
+            margin-block-start: 0;
+        }
+    }
+    }
