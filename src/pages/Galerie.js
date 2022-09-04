@@ -1,11 +1,8 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 
 const Galerie = () => {
-  return (
-    <div>
-      <h1>GALERIE</h1>
-    </div>
-  );
+  return <Navigation />;
 };
 
 export default Galerie;
