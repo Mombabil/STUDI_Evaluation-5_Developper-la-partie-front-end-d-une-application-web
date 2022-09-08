@@ -9,18 +9,19 @@ const Navigation = () => {
   // si la taille de l'écran vaut moins de 900px, on passe setToggle sur true, sinon sur false
   useEffect(() => {
     window.addEventListener("resize", () => {
-      let size = window.screen.width;
+      let size = window.screen.availWidth;
       if (size <= 900) {
         return setToggle(true);
       } else {
-        return setToggle(false), displayToggle(false);
+        return setToggle(false);
       }
     });
-    let size = window.screen.width;
+    let size = window.screen.availWidth;
     if (size <= 900) {
       return setToggle(true);
     } else {
-      return setToggle(false);
+      setToggle(false);
+      setDisplayToggle(false);
     }
   }, [toggle]);
 
@@ -83,25 +84,25 @@ const Navigation = () => {
           <ul className="toggle-nav-ul">
             <NavLink
               to="/"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
+              className={(nav) => (nav.isActive ? "nav-active-m" : "")}
             >
               <li>Accueil</li>
             </NavLink>
             <NavLink
               to="/galerie"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
+              className={(nav) => (nav.isActive ? "nav-active-m" : "")}
             >
               <li>Galerie</li>
             </NavLink>
             <NavLink
               to="/tarif"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
+              className={(nav) => (nav.isActive ? "nav-active-m" : "")}
             >
               <li>Tarifs / Prestations</li>
             </NavLink>
             <NavLink
               to="/contact"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
+              className={(nav) => (nav.isActive ? "nav-active-m" : "")}
             >
               <li>Contact</li>
             </NavLink>

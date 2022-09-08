@@ -1,0 +1,59 @@
+.tarifs-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    .tarif-container{
+        width: 450px;
+        border: 1px solid $color-2;
+        margin: 20px;
+        border-radius: 10px;
+        background: $color-2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        h2{
+            background: $color-3;
+            text-align: center;
+            font-family: $font-3;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        img{
+            width: 100%;
+        }
+        #description{
+            background: $color-4;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 100%;
+            min-height: 450px;
+            position: relative;
+            .description{
+                font-family: $font-2;
+                padding: 5px;
+            }
+            .supplement{
+                font-family: $font-1;
+                font-style: italic;
+                padding: 5px;
+            }
+        }
+        .price{
+            font-family: $font-2;
+            background: $color-3;
+            text-align: right;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding-right: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+    }
+}
