@@ -8,7 +8,11 @@ const Contact = () => {
       <Navigation />
       <div className="form">
         <h2>Contactez-nous</h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          action="https://formspree.io/f/xlevgpnb"
+          method="POST"
+        >
           <input
             type="text"
             name="name"
