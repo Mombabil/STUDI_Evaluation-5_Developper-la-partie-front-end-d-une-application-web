@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Tarif from "../components/Tarif";
 
@@ -49,6 +50,7 @@ const Tarifs = () => {
           tarif="sur mesure"
         />
       </div>
+      <Footer />
     </>
   );
 };
